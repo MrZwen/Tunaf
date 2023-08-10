@@ -12,10 +12,6 @@ nav{
     font-weight: 500;
 }
 
-.navbar-nav{
-    height: 50px;
-}
-
 /* Nambahain Sepasi Antar Tulisan Navbar */
 .navbar-nav .nav-item {
     margin-right: 50px; 
@@ -74,7 +70,7 @@ nav{
 /*  */
 
 section {
-    margin-top: 0px;
+    margin-top: 50px;
     padding: 64px 128px;
 }
 
@@ -83,6 +79,9 @@ section {
     align-items: center;
     justify-content: space-between;
     column-gap: 17px;
+    background-image: url('../img/bghome.png'); 
+    background-size: cover; 
+    height: 92vh;
 }
 
 .btn {
