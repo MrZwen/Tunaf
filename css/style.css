@@ -100,7 +100,7 @@ section {
     transition-delay: 0.1s;
 }
 
-h1 {
+#landing h1 {
     margin: 0 0 16px 0;
     color: #fff;
     font-size: 72px;
@@ -120,6 +120,16 @@ p {
 body::-webkit-scrollbar{
     display: none;
 }
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 17px;
+    margin-top: 20px;
+}
+
+
 
 @media only screen and (max-width: 992px) {
     .navbar{

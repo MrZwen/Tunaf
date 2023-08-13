@@ -15,6 +15,128 @@
     <!-- Logo bar -->
     <link rel="icon" type="image/png" href="img/icon.png">
 
+
+    <style>
+      #about > div {
+          width: 50%;
+      }
+
+      h1 {
+        color: #3A29B2;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 62px;
+        letter-spacing: 1px;
+      }
+
+      h1 span{
+        color: #29D3CA;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 62px;
+      }
+      #landing p {
+        color: #ffffff;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        opacity: 0.5;
+      }
+
+      p {
+        color: #1e1e1e;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        opacity: 0.5;
+      }
+
+      h2 {
+        color: #3A29B2;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; 
+        margin-top: 25px;
+      }
+
+      #service {
+        background-image: url('img/bgservice.png');
+      }
+
+      .service-detail-items p {
+        color: #717171;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+      }
+
+      .service-header {
+        display: center;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .service-header h1 {
+          position: relative;
+      }
+
+      .service-header h1::before {
+          content: "";
+          width: 60px;
+          height: 60px;
+          background: url(images/accent1.svg);
+          position: absolute;
+          left: -22px;
+          top: -11px;
+          z-index: -1;
+      }
+
+      .service-detail {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          column-gap: 128px;
+          margin-top: 68px;
+          border-radius: 25px;
+      }
+
+      .service-detail-items {
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+          background-color: #ffffff;
+      }
+
+      .service-detail-items:hover {
+          transform: scale(1.1);
+      }
+
+      .service-detail-items img:hover {
+          filter: grayscale(0);
+      }
+
+      .service-detail-items img {
+          width: 100%;
+
+          /* cnth filter */
+          filter: grayscale(1);
+      }
+
+      .service-detail-items h2 {
+          padding: 0 16px;
+      }
+
+      .service-detail-items p {
+          font-size: 16px;
+          padding: 0 16px;
+      }
+    </style>
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
@@ -60,9 +182,41 @@
     </section>
 
     <section id="about">
-        <div></div>
-        <div></div>
+        <div>
+          <img src="img/aboutimg.png" alt="">
+        </div>
+        <div>
+          <h1>About<span>Tunaf</span></h1>
+          <p>Tunaf is an agency that provides design services website (UI & UX) as well as web 
+            development programming so that it can used. Tunaf helps create MSME websites, agencies, artists, creators, creative people, educational places that don't have a website yet.</p>
+        </div>
     </section>
+
+    <section id="service">
+      <div class="service-header">
+          <div>
+              <h1><span>Tunaf</span>Services</h1>
+              <p>We provide various services required by clients</p>
+          </div>
+      </div>
+      <div class="service-detail">
+          <div class="service-detail-items">
+              <img src="img/webimg.png" alt="">
+              <h2>Web Development</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="service-detail-items">
+              <img src="img/smmimg.png" alt="">
+              <h2>Social Media management</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="service-detail-items">
+              <img src="img/fotoimg.png" alt="">
+              <h2>Photography & Videography</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+      </div>
+  </section>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
